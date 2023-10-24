@@ -1,0 +1,104 @@
+================================================
+	COMANDS ANGULAR CLI
+
+1 - Install the Angular CLI
+	npm install -g @angular/cli
+	
+	Uninstall the Angular CLI
+	npm uninstall -g @angular-cli
+	
+	Install latest version
+	npm install -g @angular/cli@latest
+	
+2 - Create application	
+	ng new my-app
+
+3 - Serve the application
+	cd my-app
+	ng serve --open
+	
+4 - Create componet
+	ng g componet(or c) name-componet
+	
+5 - Create module
+	ng g module(or m) name-module
+
+6 - Install Angular Material
+	
+	ng add @angular/material
+	ng add @angular/cdk
+
+7 - Install Angular Animations
+	npm install --save @angular/animations
+
+8 - Install Angular PrimeNG
+	npm install primeng --save
+
+9 - Install Angular PrimeNG Icons
+	npm install primeicons --save
+	
+10 - Install Bootstrap
+	 npm install --save npm install bootstrap@next or npm install bootstrap@3.0.0 for define version
+	 
+=============================================== 
+	COMANDS FOR CREATE AN API WHIT JASON-SERVE
+	
+1 - Firts create a folder and inside create a file packge.json with comand:
+	npm init -y
+	
+2 - Second install the json server	
+	npm i json-server
+
+3 - Create a file json with your object
+	db.json
+
+4 - Insert the comand in file packge.json in scripts
+	"start": "json-server --watch db.json --port 3001"
+
+5 - Star db.json serve
+	npm start --port 3000
+	
+================================================
+INSTALLS 18/05/2019 Link Ref https://github.com/valor-software/ngx-bootstrap/blob/development/docs/getting-started/ng-cli.md
+	
+1 - Install ng2-bootstrap
+	npm install ngx-bootstrap bootstrap
+	
+	1 - Open src/app/app.module.ts and add
+		import { AlertModule } from 'ngx-bootstrap';
+		
+		@NgModule({
+			imports: [AlertModule.forRoot(), ... ],
+		})
+	2 - Open angular.json and insert a new entry into the styles array:	
+	 "styles": [
+         "./node_modules/bootstrap/dist/css/bootstrap.min.css",
+        "styles.css",
+      ],
+	3 - Open src/app/app.component.html and add:  
+		<alert type="success">hello</alert>
+	
+	
+================================================
+	COMANDS TYPESCRIT
+
+5 - Copiler file
+	tsc name-file.ts
+		
+================================================
+	COMANDS ANGULAR MATERIAL
+
+1 - Instal Angular Material
+	ng add @angular/material
+
+2 - Create a component with Angular Material Schematics
+	ng generate @angular/material:address-form <component-name>
+	ng generate @angular/material:navigation <component-name>
+	ng generate @angular/material:table <component-name>
+	ng generate @angular/material:dashboard <component-name>
+	ng generate @angular/material:tree <component-name>
+	ng generate @angular/cdk:drag-drop <component-name>
+
+
+
+
